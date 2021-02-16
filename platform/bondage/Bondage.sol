@@ -138,7 +138,7 @@ contract Bondage is Destructible, BondageInterface, Upgradable {
     )
         external
         view
-        returns (uint256 numZap)
+        returns (uint256 numMP3)
     {
         uint256 issued = getDotsIssued(oracleAddress, endpoint);
         return currentCost._costOfNDots(oracleAddress, endpoint, issued + 1, numDots - 1);
